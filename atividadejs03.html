@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Antes e Depois</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      background-color: #f2f2f2;
+      padding-top: 100px;
+    }
+
+    h1 {
+      color: #333;
+    }
+
+    button {
+      padding: 12px 24px;
+      font-size: 16px;
+      background-color: #2196F3;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #1976D2;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Atividade: Antes e Depois</h1>
+  <button onclick="mostrarAntesEDepois()">Clique aqui</button>
+
+  <script>
+    function mostrarAntesEDepois() {
+      const numeroStr = prompt("Digite um número inteiro:");
+      const numero = parseInt(numeroStr);
+
+      if (isNaN(numero)) {
+        alert("Por favor, digite um número inteiro válido.");
+        return;
+      }
+
+      const antecessor = numero - 1;
+      const sucessor = numero + 1;
+
+      alert(`Número digitado: ${numero}\nAntecessor: ${antecessor}\nSucessor: ${sucessor}`);
+    }
+  </script>
+
+</body>
+</html>
