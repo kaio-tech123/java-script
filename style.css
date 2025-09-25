@@ -38,3 +38,82 @@ body {
     align-items: center;
     gap: 15px;
  }
+ 
+ label{
+    font-size: 1.1em;
+    margin-bottom: 5px;
+ }
+
+ input[type="number"] {
+    padding: 12px 15px;
+    border: 2px solid crimson;
+    border-radius: 5px;
+    font-size: 1.1em;
+    width: 150px;
+    text-align: center;
+    background-color: darkslategray;
+    color: #f0f0f0;
+    outline: none;
+ }
+
+input [type="number"]:focus {
+    border-color: aqua;
+}
+
+button {
+    background-color: aquamarine;
+    color: black;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 5px;
+    font-size: 1.1em;
+    cursor: pointer;
+    transition: backgroundcolor 0.3s ease;
+}
+
+button:hover {
+    background-color: aqua;
+}
+
+.resultado-area p {
+    font-size: 1.05em;
+    margin-top: 15px;
+    padding: 5px;
+    border-radius: 3px;
+}
+
+.mensagem {
+    font-weight:  1.05em;
+    color:#f0f0f0
+}
+
+.palpites-anteriores {
+    font-size: 0.9em;
+    color: #bbb;
+}
+
+.dica {
+    font-style: italic;
+    color: darkgoldenrod;
+}
+
+.hidden {
+    display: none;
+}
+ @keyframes flashGreen {
+    0% { background-color: transparent;}
+    50% { background-color: rgba(76, 175, 80, 0.3)}
+    100% { background-color: transparent;}
+}
+@keyframes flashRed {
+    0% { background-color: transparent;}
+    50% { background-color: rgba(244, 87, 54, 0.3);}
+    100% { background-color: transparent;}
+}
+
+.flash-green {
+    animation: flashGreen 0.5s ease-in-out;
+}
+.flash-red {
+    animation: flashRed 0.5s ease-in-out;
+}
