@@ -1,17 +1,14 @@
-let numeroSecreto;
-let contadorDeChances;
-const MAX_CHANCES = 10;
+const botaoSim = document.getElementById('sim');
+const botaoNao = document.getElementById('nao');
+const mensagem = document.getElementById('mensagem')
 
-const campopalpite = document.querySelector('campoPalpite');
-const botaoEnviarPalpite = document.querySelector('#botaoEnviarPalpite');
-const botaoReiniciar = document.querySelector('#botaoReiniciar');
+botaoSim.addEventListener('click', () => { mensagem.textContent = "Oownnnn, que bom que você fez a escolha certaaa"});
 
-const mensagemElement = document.querySelector('mensagem');
-const palpitesAnterioresElement = document.querySelector('palpites-anteriores');
-const dicaElement = document.querySelector('dica');
-const chancesRestantesElement = document.querySelector('#chancesRestantes');
+botaoNao.addEventListener('mouseover', () => { 
+    const x = Math.random() * (window.innerWidth - botaoNao.offsetWidth);
+    const y = Math.random() * (window.innerHeight - botaoNao.offsetHeight);
 
-function iniciarjogo() {
-    numeroSecreto = Math.floor(Math.random() * 100) +1;
-    console.log('Número Secreto (apenas para teste:' , numeroSecreto);
-}
+    botaoNao.style.position = 'absolute';
+    botaoNao.style.left = `${x}px`;
+    botaoNao.style.right = `${y}px`;
+});
