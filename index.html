@@ -1,21 +1,35 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>LOVE QUESTION</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inputs</title>
 </head>
 <body>
-  <div class="container">
-    <h1>Você quer sair comigo?</h1>
-    <div class="botoes">
-      <button id="sim">Sim 💖</button>
-      <button id="nao">Não 😅</button>
-    </div>
-    <p id="mensagem"></p>
-  </div>
+    <h1>Input - texto</h1>
+    <input type="text" placeholder="Digite seu nome">
+    <h1>Input - Senha</h1>
+    <input type="password" placeholder="Digite seu Senha">
+    <h1>Input - Data</h1>
+    <input type="date">
+    <h1>Input - data e hora</h1>
+    <input type="datetime-local">
+    <h1>Input - cor </h1>
+    <input type="color">  
 
-  <script src="script.js"></script>
+    <h1>Input - checkbox (mais de uma opção)</h1>
+    <input type="checkbox"> selecione
+    <input type="checkbox"> selecione 2
+    <h1>Input - Radio (uma opção)</h1>
+    <input type="radio" name="sexo"> Masculino
+    <input type="radio" name="sexo"> Feminino
+
+    <h1>Input - Range</h1>
+    <input type="range" min="0" max="100">
+    <h1>Input - Range</h1>
+    <input type="number" min="0" max="100">
+
+    <h1>Input - Selecionar arquivos</h1>
+    <input type="file">
 </body>
 </html>
